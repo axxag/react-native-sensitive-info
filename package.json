@@ -1,6 +1,6 @@
 {
-  "name": "react-native-sensitive-info",
-  "version": "6.0.0-alpha.9",
+  "name": "@axxag/react-native-sensitive-info",
+  "version": "6.0.0-alpha.10",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
@@ -10,6 +10,10 @@
     "build": "rimraf -rf build && rollup -c",
     "prepublishOnly": "yarn build",
     "localPublish": "yalc publish && cd example && yalc add react-native-sensitive-info --yarn && cd .."
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   },
   "author": {
     "name": "mCodex & ClassApp",
@@ -21,11 +25,11 @@
   ],
   "homepage": "https://mcodex.dev/react-native-sensitive-info/",
   "bugs": {
-    "url": "https://github.com/mcodex/react-native-sensitive-info/issues"
+    "url": "https://github.com/axxag/react-native-sensitive-info/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mcodex/react-native-sensitive-info.git"
+    "url": "git://github.com/axxag/react-native-sensitive-info.git"
   },
   "keywords": [
     "android",
