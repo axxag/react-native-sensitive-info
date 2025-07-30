@@ -12,6 +12,7 @@ import android.security.keystore.KeyInfo;
 import android.security.keystore.KeyProperties;
 import android.util.Base64;
 import android.util.Log;
+import android.annotation.SuppressLint;
 
 import androidx.annotation.NonNull;
 import androidx.biometric.BiometricConstants;
@@ -339,6 +340,7 @@ public class RNSensitiveInfoModule extends ReactContextBaseJavaModule {
 
             UiThreadUtil.runOnUiThread(
                     new Runnable() {
+                        @SuppressLint("RestrictedApi")
                         @Override
                         public void run() {
                             try {
